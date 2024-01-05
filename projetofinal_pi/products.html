@@ -15,11 +15,11 @@
     -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <!-- https://fonts.google.com/specimen/Open+Sans -->
-    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome2.min.css">
     <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap2.min.css">
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="css/tooplate.css">
+    <link rel="stylesheet" href="css/tooplate2.css">
 </head>
 
 <body id="reportsPage" class="bg02">
@@ -30,47 +30,48 @@
                     <nav class="navbar navbar-expand-xl navbar-light bg-light">
                         <a class="navbar-brand" href="index2.html">
                             <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
-                            <h1 class="tm-site-title mb-0">Dashboard</h1>
+                            <h1 class="tm-site-title mb-0">ONLINEACCT</h1>
                         </a>
                         <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+    
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index2.html">Dashboard
+                                    <a class="nav-link" href="index2.html">ONLINEACCT
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
-                                        Reports
+                                        Banco
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Daily Report</a>
-                                        <a class="dropdown-item" href="#">Weekly Report</a>
-                                        <a class="dropdown-item" href="#">Yearly Report</a>
+                                        <a class="dropdown-item" href="./edit-product1.html">Depositar</a>
+                                        <a class="dropdown-item" href="./edit-product2.html">Retirar</a>
+                                        <a class="dropdown-item" href="./edit-product3.html">Transferecia</a>
+                                        <a class="dropdown-item" href="./edit-product4.html">Emprestimo</a>
                                     </div>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="products.html">Products</a>
-                                </li>
-
                                 <li class="nav-item">
-                                    <a class="nav-link" href="accounts.html">Accounts</a>
+                                    <a class="nav-link" href="products.html">Transferências</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accounts.html">Contas</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
-                                        Settings
+                                        Informações
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Profile</a>
-                                        <a class="dropdown-item" href="#">Billing</a>
-                                        <a class="dropdown-item" href="#">Customize</a>
+                                        <a class="dropdown-item" href="#">Perfil</a>
+                                        <a class="dropdown-item" href="#">Saldo total</a>
+                                        <a class="dropdown-item" href="#">Dados Pessoais</a>
                                     </div>
                                 </li>
                             </ul>
@@ -78,7 +79,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link d-flex" href="login.html">
                                         <i class="far fa-user mr-2 tm-logout-icon"></i>
-                                        <span>Logout</span>
+                                        <span>Sair</span>
                                     </a>
                                 </li>
                             </ul>
@@ -92,11 +93,8 @@
                     <div class="bg-white tm-block h-100">
                         <div class="row">
                             <div class="col-md-8 col-sm-12">
-                                <h2 class="tm-block-title d-inline-block">Products</h2>
+                                <h2 class="tm-block-title d-inline-block">Histórico de Transferecia</h2>
 
-                            </div>
-                            <div class="col-md-4 col-sm-12 text-right">
-                                <a href="add-product.html" class="btn btn-small btn-primary">Add New Product</a>
                             </div>
                         </div>
                         <div class="table-responsive">
@@ -104,10 +102,10 @@
                                 <thead>
                                     <tr class="tm-bg-gray">
                                         <th scope="col">&nbsp;</th>
-                                        <th scope="col">Product Name</th>
-                                        <th scope="col" class="text-center">Units Sold</th>
-                                        <th scope="col" class="text-center">In Stock</th>
-                                        <th scope="col">Expire Date</th>
+                                        <th scope="col">Conta</th>
+                                        <th scope="col" class="text-center">Tipo</th>
+                                        <th scope="col" class="text-center">Dinheiro</th>
+                                        <th scope="col">Date</th>
                                         <th scope="col">&nbsp;</th>
                                     </tr>
                                 </thead>
@@ -116,19 +114,19 @@
                                         <th scope="row">
                                             <input type="checkbox" aria-label="Checkbox">
                                         </th>
-                                        <td class="tm-product-name">1. In malesuada placerat (hover)</td>
-                                        <td class="text-center">145</td>
-                                        <td class="text-center">255</td>
-                                        <td>2018-10-28</td>
+                                        <td>1.Conta Privada</td>
+                                        <td class="text-center">Depósito</td>
+                                        <td class="text-center">1250</td>
+                                        <td></td>
                                         <td><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
                                             <input type="checkbox" aria-label="Checkbox">
                                         </th>
-                                        <td class="tm-product-name">2. Aenean eget urna enim. Sed enim</td>
-                                        <td class="text-center">240</td>
-                                        <td class="text-center">260</td>
+                                        <td>2.Conta Familiar</td>
+                                        <td class="text-center">Retirada</td>
+                                        <td class="text-center">230</td>
                                         <td>2018-10-24</td>
                                         <td><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                     </tr>
@@ -136,9 +134,9 @@
                                         <th scope="row">
                                             <input type="checkbox" aria-label="Checkbox">
                                         </th>
-                                        <td class="tm-product-name">3. Vivamus convallis tincidunt nisi</td>
-                                        <td class="text-center">360</td>
-                                        <td class="text-center">440</td>
+                                        <td>3.Conta privada para a Conta filho 1</td>
+                                        <td class="text-center">Transferência</td>
+                                        <td class="text-center">100</td>
                                         <td>2019-02-14</td>
                                         <td><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                     </tr>
@@ -146,9 +144,9 @@
                                         <th scope="row">
                                             <input type="checkbox" aria-label="Checkbox">
                                         </th>
-                                        <td class="tm-product-name">4. Donec semper massa eget</td>
-                                        <td class="text-center">445</td>
-                                        <td class="text-center">655</td>
+                                        <td>4.Conta Poupaça</td>
+                                        <td class="text-center">Retirada</td>
+                                        <td class="text-center">203</td>
                                         <td>2019-03-22</td>
                                         <td><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                     </tr>
@@ -156,9 +154,9 @@
                                         <th scope="row">
                                             <input type="checkbox" aria-label="Checkbox">
                                         </th>
-                                        <td class="tm-product-name">5. Donec semper massa eget</td>
-                                        <td class="text-center">445</td>
-                                        <td class="text-center">655</td>
+                                        <td>5.Conta privada</td>
+                                        <td class="text-center">Depósito</td>
+                                        <td class="text-center">300</td>
                                         <td>2019-03-22</td>
                                         <td><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                     </tr>
@@ -166,9 +164,9 @@
                                         <th scope="row">
                                             <input type="checkbox" aria-label="Checkbox">
                                         </th>
-                                        <td class="tm-product-name">6. Donec semper massa eget</td>
-                                        <td class="text-center">445</td>
-                                        <td class="text-center">655</td>
+                                        <td>6.Conta privada para a Conta filho 2 </td>
+                                        <td class="text-center">Transferência</td>
+                                        <td class="text-center">100</td>
                                         <td>2019-03-22</td>
                                         <td><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                     </tr>
@@ -176,9 +174,9 @@
                                         <th scope="row">
                                             <input type="checkbox" aria-label="Checkbox">
                                         </th>
-                                        <td class="tm-product-name">7. Donec semper massa eget</td>
-                                        <td class="text-center">445</td>
-                                        <td class="text-center">655</td>
+                                        <td>7.Conta Poupança</td>
+                                        <td class="text-center">Depósito</td>
+                                        <td class="text-center">700</td>
                                         <td>2019-03-22</td>
                                         <td><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                     </tr>
@@ -186,9 +184,9 @@
                                         <th scope="row">
                                             <input type="checkbox" aria-label="Checkbox">
                                         </th>
-                                        <td class="tm-product-name">8. Donec semper massa eget</td>
-                                        <td class="text-center">445</td>
-                                        <td class="text-center">655</td>
+                                        <td>8.Conta privada</td>
+                                        <td class="text-center">Retirada</td>
+                                        <td class="text-center">300</td>
                                         <td>2019-03-22</td>
                                         <td><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                     </tr>
@@ -221,58 +219,53 @@
 
                 <div class="col-xl-4 col-lg-12 tm-md-12 tm-sm-12 tm-col">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title d-inline-block">Product Categories</h2>
+                        <h2 class="tm-block-title d-inline-block">Porfile</h2>
                         <table class="table table-hover table-striped mt-3">
                             <tbody>
                                 <tr>
-                                    <td>1. Cras efficitur lacus</td>
+                                    <td>Lista de tarefas</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>2. Pellentesque molestie</td>
+                                    <td>Dividas</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>3. Sed feugiat nulla</td>
+                                    <td>Ver mensagens</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>4. Vestibulum varius arcu</td>
+                                    <td>Escrever email</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>5. Aenean eget urna enim</td>
+                                    <td>ligar a suporte</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>6. Condimentum viverra</td>
+                                    <td>ir a uma entrevistas</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>7. In malesuada</td>
+                                    <td>planos na semana</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>8. Placerat</td>
+                                    <td>Perguntar por aconselhamentos</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>9. Donec semper</td>
+                                    <td>Contactar a empressa</td>
                                     <td class="tm-trash-icon-cell"><i class="fas fa-trash-alt tm-trash-icon"></i></td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <a href="#" class="btn btn-primary tm-table-mt">Add New Category</a>
                     </div>
                 </div>
             </div>
             <footer class="row tm-mt-small">
                 <div class="col-12 font-weight-light">
-                    <p class="d-inline-block tm-bg-black text-white py-2 px-4">
-                        Copyright &copy; 2018 Admin Dashboard . Created by
-                        <a rel="nofollow" href="https://www.tooplate.com" class="text-white tm-footer-link">Tooplate</a>
-                    </p>
                 </div>
             </footer>
         </div>

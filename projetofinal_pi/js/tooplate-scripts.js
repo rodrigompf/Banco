@@ -9,7 +9,7 @@ function drawLineChart() {
           {
             scaleLabel: {
               display: true,
-              labelString: "Hits"
+              labelString: "Saldo"
             }
           }
         ]
@@ -34,22 +34,22 @@ function drawLineChart() {
         ],
         datasets: [
           {
-            label: "Latest Hits",
-            data: [88, 68, 79, 57, 56, 55, 70],
+            label: "Conta Poupança",
+            data: [302, 420, 450, 500, 620, 720, 800],
             fill: false,
             borderColor: "rgb(75, 192, 192)",
             lineTension: 0.1
           },
           {
-            label: "Popular Hits",
-            data: [33, 45, 37, 21, 55, 74, 69],
+            label: "Conta Familiar",
+            data: [1020, 700, 600, 800, 1200, 1300, 750],
             fill: false,
             borderColor: "rgba(255,99,132,1)",
             lineTension: 0.1
           },
           {
-            label: "Featured",
-            data: [44, 19, 38, 46, 85, 66, 79],
+            label: "Conta Privada",
+            data: [120, 130, 170, 90, 250, 300, 179],
             fill: false,
             borderColor: "rgba(153, 102, 255, 1)",
             lineTension: 0.1
@@ -77,7 +77,7 @@ function drawBarChart() {
             },
             scaleLabel: {
               display: true,
-              labelString: "Hits"
+              labelString: "Saldo"
             }
           }
         ]
@@ -90,11 +90,11 @@ function drawBarChart() {
     configBar = {
       type: "bar",
       data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Poupança", "Familiar", "Privada", "filho 1", "filho 2", ""],
         datasets: [
           {
-            label: "# of Hits",
-            data: [12, 19, 3, 5, 2, 3],
+            label: "Saldo médio",
+            data: [544.57 ,910 , 177, 200, 100, 0],
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
               "rgba(54, 162, 235, 0.2)",
@@ -135,15 +135,15 @@ function drawPieChart() {
       data: {
         datasets: [
           {
-            data: [4600, 5400],
+            data: [2300, 2310],
             backgroundColor: [
               window.chartColors.purple,
               window.chartColors.green
             ],
-            label: "Storage"
+            label: "Saldo Total Geral"
           }
         ],
-        labels: ["Used: 4,600 GB", "Available: 5,400 GB"]
+        labels: ["Dinheiro-gasto -2300 ", "Dinheiro-restante 2310"]
       },
       options: optionsPie
     };

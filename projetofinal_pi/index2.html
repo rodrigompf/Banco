@@ -32,7 +32,7 @@
                     <nav class="navbar navbar-expand-xl navbar-light bg-light">
                         <a class="navbar-brand" href="#">
                             <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
-                            <h1 class="tm-site-title mb-0">Dashboard</h1>
+                            <h1 class="tm-site-title mb-0">ONLINEACCT</h1>
                         </a>
                         <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -42,37 +42,38 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#">Dashboard
+                                    <a class="nav-link active" href="#">ONLINEACCT
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
-                                        Reports
+                                        Banco
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Daily Report</a>
-                                        <a class="dropdown-item" href="#">Weekly Report</a>
-                                        <a class="dropdown-item" href="#">Yearly Report</a>
+                                        <a class="dropdown-item" href="./edit-product1.html">Depositar</a>
+                                        <a class="dropdown-item" href="./edit-product2.html">Retirar</a>
+                                        <a class="dropdown-item" href="./edit-product3.html">Transferecia</a>
+                                        <a class="dropdown-item" href="./edit-product4.html">Emprestimo</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="products.html">Products</a>
+                                    <a class="nav-link" href="products.html">Transferências</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="accounts.html">Accounts</a>
+                                    <a class="nav-link" href="accounts.html">Contas</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
-                                        Settings
+                                        Informações
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#">Profile</a>
-                                        <a class="dropdown-item" href="#">Billing</a>
-                                        <a class="dropdown-item" href="#">Customize</a>
+                                        <a class="dropdown-item" href="#">SaldoTotal</a>
+                                        <a class="dropdown-item" href="#">Dados Pessoais</a>
                                     </div>
                                 </li>
                             </ul>
@@ -80,7 +81,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link d-flex" href="login.html">
                                         <i class="far fa-user mr-2 tm-logout-icon"></i>
-                                        <span>Logout</span>
+                                        <span>Sair</span>
                                     </a>
                                 </li>
                             </ul>
@@ -92,13 +93,13 @@
             <div class="row tm-content-row tm-mt-big">
                 <div class="tm-col tm-col-big">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">Latest Hits</h2>
+                        <h2 class="tm-block-title">Saldo das contas</h2>
                         <canvas id="lineChart"></canvas>
                     </div>
                 </div>
                 <div class="tm-col tm-col-big">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">Performance</h2>
+                        <h2 class="tm-block-title">Contas</h2>
                         <canvas id="barChart"></canvas>
                     </div>
                 </div>
@@ -112,45 +113,45 @@
                     <div class="bg-white tm-block h-100">
                         <div class="row">
                             <div class="col-8">
-                                <h2 class="tm-block-title d-inline-block">Top Product List</h2>
+                                <h2 class="tm-block-title d-inline-block">Transferências</h2>
 
                             </div>
                             <div class="col-4 text-right">
-                                <a href="products.html" class="tm-link-black">View All</a>
+                                <a href="products.html" class="tm-link-black">Visualizar Completa</a>
                             </div>
                         </div>
                         <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
                             <li class="tm-list-group-item">
-                                Donec eget libero
+                                Depósito:1250$ na Conta Privada.
                             </li>
                             <li class="tm-list-group-item">
-                                Nunc luctus suscipit elementum
+                                Retirada:230$ na Conta Familiar.
                             </li>
                             <li class="tm-list-group-item">
-                                Maecenas eu justo maximus
+                                Transferência:100$ da Conta privada para a Conta filho 1 .
                             </li>
                             <li class="tm-list-group-item">
-                                Pellentesque auctor urna nunc
+                                Retirada: 203$ na Conta Poupaça.
                             </li>
                             <li class="tm-list-group-item">
-                                Sit amet aliquam lorem efficitur
+                                Depósito: 300$ na Conta privada.
                             </li>
                             <li class="tm-list-group-item">
-                                Pellentesque auctor urna nunc
+                                Transferência:100$ da Conta privada para a Conta filho 2 .
                             </li>
                             <li class="tm-list-group-item">
-                                Sit amet aliquam lorem efficitur
+                                Depósito: 700$ na Conta Poupança.
                             </li>
                         </ol>
                     </div>
                 </div>
                 <div class="tm-col tm-col-big">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">Calendar</h2>
+                        <h2 class="tm-block-title">Canlendário</h2>
                         <div id="calendar"></div>
                         <div class="row mt-4">
                             <div class="col-12 text-right">
-                                <a href="#" class="tm-link-black">View Schedules</a>
+                                <a href="#" class="tm-link-black">Ver Planos</a>
                             </div>
                         </div>
 
@@ -158,30 +159,26 @@
                 </div>
                 <div class="tm-col tm-col-small">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">Upcoming Tasks</h2>
+                        <h2 class="tm-block-title">Profile</h2>
                         <ol class="tm-list-group">
-                            <li class="tm-list-group-item">List of tasks</li>
-                            <li class="tm-list-group-item">Lorem ipsum doloe</li>
-                            <li class="tm-list-group-item">Read reports</li>
-                            <li class="tm-list-group-item">Write email</li>
+                            <li class="tm-list-group-item">Lista de tarefas</li>
+                            <li class="tm-list-group-item">Dividas</li>
+                            <li class="tm-list-group-item">Ver mensagens</li>
+                            <li class="tm-list-group-item">Escrever email</li>
                             
-                            <li class="tm-list-group-item">Call customers</li>
-                            <li class="tm-list-group-item">Go to meeting</li>
-                            <li class="tm-list-group-item">Weekly plan</li>
-                            <li class="tm-list-group-item">Ask for feedback</li>
+                            <li class="tm-list-group-item">ligar a suporte</li>
+                            <li class="tm-list-group-item">ir a um entrevistas</li>
+                            <li class="tm-list-group-item">Planos na semana</li>
+                            <li class="tm-list-group-item">Perguntar por aconselhamentos</li>
                             
-                            <li class="tm-list-group-item">Meet Supervisor</li>
-                            <li class="tm-list-group-item">Company trip</li>
+                            <li class="tm-list-group-item">Contactar a empressa</li>
+                            <li class="tm-list-group-item">Regras da companhia</li>
                         </ol>
                     </div>
                 </div>
             </div>
             <footer class="row tm-mt-small">
                 <div class="col-12 font-weight-light">
-                    <p class="d-inline-block tm-bg-black text-white py-2 px-4">
-                        Copyright &copy; 2018 Admin Dashboard . Created by
-                        <a rel="nofollow" href="https://www.tooplate.com" class="text-white tm-footer-link">Tooplate</a>
-                    </p>
                 </div>
             </footer>
         </div>
